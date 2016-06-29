@@ -18,7 +18,7 @@ var errorHandler = function (error) {
 gulp.task('default', ['styles']);
 
 gulp.task('styles', function() {
-  return gulp.src('./src/sass/application.sass')
+  return gulp.src('./src/sass/**/**.sass')
     .pipe(plumber({ errorHandler: errorHandler }))
     .pipe(sass({ indentedSyntax: true }).on('error', util.log))
     .pipe(concat('application.css'))

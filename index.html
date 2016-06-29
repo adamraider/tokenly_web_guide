@@ -12,33 +12,62 @@
 <body>
   <div class="everything">
     <section>
-      <h1 class="page-title">Tokenly Web Style Guide</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quas quaerat voluptatibus impedit, nihil unde nisi quisquam explicabo provident quae non, minima quibusdam, culpa rem, ad obcaecati dolor blanditiis ipsam.</p>
+      <h1 class="has-lines">Tokenly Web Style Guide</h1>
+      <p>Hello, fellow Tokener. Use this style guide as a basis for building Tokenly web applications.</p>
+      <p>Using a visually consistent color pallete and styling makes it easier for our users to navigate across the Tokenly suite of applications. It also strengthens our brand identity and can speed-up product development.</p>
+      <p>Remember, this is a guide and not a rulebook. Style, tweak and customize per your discretion.</p>
     </section>
 
     <section class="typography">
-      <h2>Typography</h2>
-
-      <h4>Font Stack: <span class="font-stack"></span></h4>
-
-      <h4>Light</h4>
-      <p class="font-weight">
-        <span class="font-weight-light">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
-      </p>
-
-      <h4>Normal</h4>
-      <p class="font-weight">
-        <span class="font-weight-normal">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
-      </p>
-
-      <h4>Bold</h4>
-      <p class="font-weight">
-        <span class="font-weight-bold">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
-      </p>
+      <h2 class="has-lines">Typography</h2>
+      <br>
+      <div class="fluid-container">
+        <div class="row">
+          <div class="three columns">
+            <span class="bit-label">Font Stack</span>
+          </div>
+          <div class="nine columns">
+            <span class="font-stack"></span>
+          </div>
+        </div>
+      
+        <hr>
+        <div class="row">   
+          <div class="three columns"> 
+            <span class="bit-label">Light</span>
+          </div>
+          <div class="nine columns">
+            <div class="font-weight">
+              <span class="font-weight-light">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="three columns">
+            <span class="bit-label">Normal</span>
+          </div>
+          <div class="nine columns">
+            <div class="font-weight">
+              <span class="font-weight-normal">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="three columns">
+            <span class="bit-label">Bold</span>
+          </div>
+          <div class="nine columns">
+            <div class="font-weight">
+              <span class="font-weight-bold">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="colors">
-      <h2>Colors</h2>
+      <h2 class="has-lines">Colors</h2>
+      <br>
       <div class="colors-container">
         <div class="color primary">
           <div class="color-fill"></div>
@@ -62,10 +91,15 @@
         </div>
       </div>
       <div class="colors-container">
+        <div class="color gray-darker">
+          <div class="color-fill"></div>
+          <div class="color-hex"></div>
+          <div class="color-details">Text Dark</div>
+        </div>
         <div class="color gray-dark">
           <div class="color-fill"></div>
           <div class="color-hex"></div>
-          <div class="color-details">Text Normal</div>
+          <div class="color-details">Text</div>
         </div>
         <div class="color gray">
           <div class="color-fill"></div>
@@ -85,7 +119,8 @@
       </section>
 
       <section class="buttons">
-        <h2>Buttons</h2>
+        <h2 class="has-lines">Buttons</h2>
+        <br>
         <div class="buttons-container">
           <button class="btn fill primary">Submit</button>
           <button class="btn fill success">Submit</button>
@@ -103,7 +138,8 @@
       </section>
 
       <section class="forms">
-        <h2>Forms</h2>
+        <h2 class="has-lines">Forms</h2>
+        <br>
         <form>
           <div class="input-group">
             <label>Email</label>
@@ -113,6 +149,7 @@
           <div class="input-group">
             <label>Password</label>
             <input type="password" placeholder="raider@tokenly.com">
+            <div class="sublabel">Must be atleast 6 characters long</div>
           </div>
 
           <div class="input-group">
