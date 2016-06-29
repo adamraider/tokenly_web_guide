@@ -1,3 +1,6 @@
+body {
+  font-size: 16px; }
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -36,6 +39,10 @@ p {
   max-width: 960px;
   margin: 0 auto; }
 
+.page-title {
+  color: #272a2b;
+  font-style: italic; }
+
 section {
   margin-bottom: 80px; }
   section:first-of-type {
@@ -72,19 +79,26 @@ section.colors .colors-container {
       height: 120px;
       background-color: #d8dcde; }
     section.colors .colors-container .color .color-hex, section.colors .colors-container .color .color-details {
-      padding: 4px 10px; }
+      color: #989b9b;
+      padding: 8px 10px; }
+    section.colors .colors-container .color .color-details {
+      font-size: 14px; }
     section.colors .colors-container .color.primary .color-fill {
-      background-color: #0275d8; }
+      background-color: #4497FA; }
     section.colors .colors-container .color.primary .color-hex::before {
-      content: "#0275d8"; }
+      content: "#4497FA"; }
     section.colors .colors-container .color.success .color-fill {
       background-color: #2eCC71; }
     section.colors .colors-container .color.success .color-hex::before {
       content: "#2eCC71"; }
+    section.colors .colors-container .color.warning .color-fill {
+      background-color: #FFC107; }
+    section.colors .colors-container .color.warning .color-hex::before {
+      content: "#FFC107"; }
     section.colors .colors-container .color.danger .color-fill {
-      background-color: #ff7857; }
+      background-color: #FB6B5D; }
     section.colors .colors-container .color.danger .color-hex::before {
-      content: "#ff7857"; }
+      content: "#FB6B5D"; }
     section.colors .colors-container .color.gray-dark .color-fill {
       background-color: #272a2b; }
     section.colors .colors-container .color.gray-dark .color-hex::before {
@@ -155,14 +169,14 @@ section.buttons .buttons-container {
   transition: background-color 0.1s ease;
   text-decoration: none;
   font-size: 14px;
-  background-color: #0275d8;
+  background-color: #4497FA;
   color: #fff;
   padding: 14px 40px; }
   .btn.fill.primary:hover {
     text-decoration: none;
     cursor: pointer; }
   .btn.fill.primary:hover {
-    background-color: #068bfd; }
+    background-color: #6cadfb; }
 
 .btn.fill.danger {
   outline: none;
@@ -173,14 +187,14 @@ section.buttons .buttons-container {
   transition: background-color 0.1s ease;
   text-decoration: none;
   font-size: 14px;
-  background-color: #ff7857;
+  background-color: #FB6B5D;
   color: #fff;
   padding: 14px 40px; }
   .btn.fill.danger:hover {
     text-decoration: none;
     cursor: pointer; }
   .btn.fill.danger:hover {
-    background-color: #ff9980; }
+    background-color: #fc8f85; }
 
 .btn.fill.success {
   outline: none;
@@ -250,15 +264,15 @@ section.buttons .buttons-container {
   text-decoration: none;
   font-size: 14px;
   background-color: transparent;
-  border: 2px solid #0275d8;
-  color: #0275d8;
+  border: 2px solid #4497FA;
+  color: #4497FA;
   padding: 12px 38px; }
   .btn.border.primary:hover {
     text-decoration: none;
     cursor: pointer; }
   .btn.border.primary:hover {
-    border-color: #068bfd;
-    color: #068bfd; }
+    border-color: #6cadfb;
+    color: #6cadfb; }
 
 .btn.border.danger {
   outline: none;
@@ -270,15 +284,15 @@ section.buttons .buttons-container {
   text-decoration: none;
   font-size: 14px;
   background-color: transparent;
-  border: 2px solid #ff7857;
-  color: #ff7857;
+  border: 2px solid #FB6B5D;
+  color: #FB6B5D;
   padding: 12px 38px; }
   .btn.border.danger:hover {
     text-decoration: none;
     cursor: pointer; }
   .btn.border.danger:hover {
-    border-color: #ff9980;
-    color: #ff9980; }
+    border-color: #fc8f85;
+    color: #fc8f85; }
 
 .btn.border.success {
   outline: none;

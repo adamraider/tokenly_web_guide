@@ -6,13 +6,17 @@ $gray:                      #989b9b
 $gray-light:                #d8dcde
 $gray-lighter:              #eeeeee
 
-$brand-primary:             #0275d8
+$brand-primary:             #4497FA //#0275d8
 $brand-success:             #2eCC71
-$brand-danger:              #ff7857
+$brand-warning:             #FFC107
+$brand-danger:              #FB6B5D //#ff7857
 
 $tablet: "only screen and (min-width : 600px)"
 
 // TYPOGRAPHY
+body
+  font-size: 16px
+
 *
   box-sizing: border-box
   -webkit-font-smoothing: antialiased
@@ -45,6 +49,10 @@ p
   padding: 0 10px
   max-width: 960px
   margin: 0 auto
+
+.page-title
+  color: $gray-dark
+  font-style: italic
 
 section
   margin-bottom: 80px
@@ -82,8 +90,10 @@ section.colors
         height: $color-size
         background-color: $gray-light
       .color-hex, .color-details
-        padding: 4px 10px
+        color: $gray
+        padding: 8px 10px
       .color-details
+        font-size: 14px
 
       // COLORS
       &.primary
@@ -97,6 +107,12 @@ section.colors
           background-color: $brand-success
         .color-hex::before
           content: "#{ $brand-success }"
+
+      &.warning
+        .color-fill
+          background-color: $brand-warning
+        .color-hex::before
+          content: "#{ $brand-warning }"
 
       &.danger
         .color-fill
