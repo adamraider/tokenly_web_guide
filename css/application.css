@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Ubuntu", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #272a2b; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #989b9b; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h4 {
+  font-size: 1.12em; }
+
+h5 {
+  font-size: .83em; }
+
+h6 {
+  font-size: .75em; }
+
+p {
+  line-height: 1.5; }
+
+.everything {
+  padding: 0 10px;
+  max-width: 960px;
+  margin: 0 auto; }
+
+section {
+  margin-bottom: 80px; }
+  section:first-of-type {
+    margin-top: 60px; }
+  section:not(:first-of-type) {
+    border-top: 1px solid #eee; }
+
+section.typography .font-stack:after {
+  content: "Ubuntu, HelveticaNeue, Helvetica, Arial, sans-serif"; }
+
+section.typography .font-weight {
+  font-size: 24px; }
+
+section.typography .font-weight-light {
+  font-weight: lighter; }
+
+section.typography .font-weight-normal {
+  font-weight: normal; }
+
+section.typography .font-weight-bold {
+  font-weight: bold; }
+
+section.colors .colors-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  section.colors .colors-container .color {
+    border: 1px solid #eeeeee;
+    width: 120px;
+    margin: 10px 20px; }
+    section.colors .colors-container .color .color-fill {
+      width: 120px;
+      height: 120px;
+      background-color: #d8dcde; }
+    section.colors .colors-container .color .color-hex, section.colors .colors-container .color .color-details {
+      padding: 4px 10px; }
+    section.colors .colors-container .color.primary .color-fill {
+      background-color: #0275d8; }
+    section.colors .colors-container .color.primary .color-hex::before {
+      content: "#0275d8"; }
+    section.colors .colors-container .color.success .color-fill {
+      background-color: #2eCC71; }
+    section.colors .colors-container .color.success .color-hex::before {
+      content: "#2eCC71"; }
+    section.colors .colors-container .color.danger .color-fill {
+      background-color: #ff7857; }
+    section.colors .colors-container .color.danger .color-hex::before {
+      content: "#ff7857"; }
+    section.colors .colors-container .color.gray-dark .color-fill {
+      background-color: #272a2b; }
+    section.colors .colors-container .color.gray-dark .color-hex::before {
+      content: "#272a2b"; }
+    section.colors .colors-container .color.gray .color-fill {
+      background-color: #989b9b; }
+    section.colors .colors-container .color.gray .color-hex::before {
+      content: "#989b9b"; }
+    section.colors .colors-container .color.gray-light .color-fill {
+      background-color: #d8dcde; }
+    section.colors .colors-container .color.gray-light .color-hex::before {
+      content: "#d8dcde"; }
+    section.colors .colors-container .color.gray-lighter .color-fill {
+      background-color: #eeeeee; }
+    section.colors .colors-container .color.gray-lighter .color-hex::before {
+      content: "#eeeeee"; }
+
+section.buttons .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  section.buttons .buttons-container .btn {
+    margin: 5px 10px; }
+
+.btn.fill.default {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #989b9b;
+  color: #fff;
+  padding: 14px 40px; }
+  .btn.fill.default:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.fill.default:hover {
+    background-color: #adafaf; }
+
+.btn.fill.dark {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #272a2b;
+  color: #fff;
+  padding: 14px 40px; }
+  .btn.fill.dark:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.fill.dark:hover {
+    background-color: #3a3f40; }
+
+.btn.fill.primary {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #0275d8;
+  color: #fff;
+  padding: 14px 40px; }
+  .btn.fill.primary:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.fill.primary:hover {
+    background-color: #068bfd; }
+
+.btn.fill.danger {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #ff7857;
+  color: #fff;
+  padding: 14px 40px; }
+  .btn.fill.danger:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.fill.danger:hover {
+    background-color: #ff9980; }
+
+.btn.fill.success {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #2eCC71;
+  color: #fff;
+  padding: 14px 40px; }
+  .btn.fill.success:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.fill.success:hover {
+    background-color: #4cd787; }
+
+.btn.border.default {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid #989b9b;
+  color: #989b9b;
+  padding: 12px 38px; }
+  .btn.border.default:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.border.default:hover {
+    border-color: #adafaf;
+    color: #adafaf; }
+
+.btn.border.dark {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid #272a2b;
+  color: #272a2b;
+  padding: 12px 38px; }
+  .btn.border.dark:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.border.dark:hover {
+    border-color: #3a3f40;
+    color: #3a3f40; }
+
+.btn.border.primary {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid #0275d8;
+  color: #0275d8;
+  padding: 12px 38px; }
+  .btn.border.primary:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.border.primary:hover {
+    border-color: #068bfd;
+    color: #068bfd; }
+
+.btn.border.danger {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid #ff7857;
+  color: #ff7857;
+  padding: 12px 38px; }
+  .btn.border.danger:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.border.danger:hover {
+    border-color: #ff9980;
+    color: #ff9980; }
+
+.btn.border.success {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid #2eCC71;
+  color: #2eCC71;
+  padding: 12px 38px; }
+  .btn.border.success:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.border.success:hover {
+    border-color: #4cd787;
+    color: #4cd787; }
+
+section.forms .input-group {
+  margin-bottom: 15px; }
+
+section.forms label {
+  margin-bottom: 6px;
+  min-width: 120px;
+  display: inline-block;
+  color: #272a2b;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 14px; }
+
+section.forms input, section.forms textarea, section.forms select {
+  -webkit-appearance: initial;
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 18px;
+  font-size: 16px; }
