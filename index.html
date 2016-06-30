@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/tokenly.css">
   <link rel="stylesheet" href="./css/application.css">
 
 </head>
@@ -14,7 +15,6 @@
     <section>
       <h1 class="has-lines">Tokenly Web Style Guide</h1>
       <br>
-      <img width="100px" style="margin-right: 30px" class="u-pull-left" src="./images/tokenly_logo.png" alt="Tokenly Logo">
       <p>Hello, fellow Tokener. Use this style guide as a basis for building Tokenly web applications.</p>
       <p>Using a visually consistent color pallete and styling makes it easier for our users to navigate across the Tokenly suite of applications. It also strengthens our brand identity and can speed-up product development.</p>
       <p>Remember, this is a guide and not a rulebook. Style, tweak and customize per your discretion.</p>
@@ -140,7 +140,6 @@
       </div>
       <p>The various types of buttons are a visual way of telling the user which the importance and functionality of the button.</p>
       <p>Use color to indicate if the user should take caution before clicking (warning / danger).</p>
-      <p>Use color to indicate if the user should take caution before clicking (warning / danger).</p>
     </section>
 
     <section class="forms">
@@ -148,7 +147,7 @@
       <br>
       <form>
         <div class="input-group">
-          <label>Email</label>
+          <label>Text</label>
           <input type="text" placeholder="raider@tokenly.com">
         </div>
 
@@ -159,13 +158,22 @@
         </div>
 
         <div class="input-group">
-          <label>Soda?</label>
+          <label>Select</label>
           <select>
             <option value="">Cola</option>
             <option value="">Sprite</option>
             <option value="">Dr. Pepper</option>
             <option value="">Root Beer</option>
           </select>
+        </div>
+
+        <div class="input-group">
+          <label>Checkbox</label>
+          <input type="checkbox">
+        </div>
+        <div class="input-group">
+          <label>Radio</label>
+          <input type="radio">
         </div>
       </form>
     </section>
@@ -175,12 +183,26 @@
       <table>
         <thead>
           <tr>
+            <th>Ranking</th>
             <th>Fruit</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>1</td>
             <td>Apple</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Banana</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Pear</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Orange</td>
           </tr>
         </tbody>
       </table>

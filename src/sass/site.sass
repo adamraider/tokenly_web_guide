@@ -1,0 +1,119 @@
+.everything
+  padding: 0 10px
+  max-width: 960px
+  margin: 0 auto
+  overflow: hidden
+
+section
+  margin-bottom: 60px
+  &:first-of-type
+    margin-top: 60px
+  &:not(:first-of-type)
+    // border-top: 1px solid #eee
+  & > *:last-child
+    margin-bottom: 0
+
+section.typography
+  .bit-label
+    font-weight: bold
+    text-transform: uppercase
+  .font-stack
+    &:after
+      content: "#{ $font-stack }"
+  .font-weight
+    margin-top: 0
+    font-size: 24px
+    margin-bottom: 15px
+  .font-weight-light
+    font-weight: lighter
+  .font-weight-normal
+    font-weight: normal
+  .font-weight-bold
+    font-weight: bold
+
+section.colors
+  .colors-container
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    $color-size: 120px
+    .color
+      border: 1px solid $gray-lighter
+      width: $color-size
+      margin: 10px 20px
+      .color-fill
+        width: $color-size
+        height: $color-size
+        background-color: $gray-light
+      .color-hex, .color-details
+        color: $gray
+        padding: 8px 10px
+      .color-hex
+        border-bottom: 1px solid $gray-lighter
+      .color-details
+        font-size: 14px
+
+      // COLORS
+      &.primary
+        .color-fill
+          background-color: $brand-primary
+        .color-hex::before
+          content: "#{ $brand-primary }"
+
+      &.success
+        .color-fill
+          background-color: $brand-success
+        .color-hex::before
+          content: "#{ $brand-success }"
+
+      &.warning
+        .color-fill
+          background-color: $brand-warning
+        .color-hex::before
+          content: "#{ $brand-warning }"
+
+      &.danger
+        .color-fill
+          background-color: $brand-danger
+        .color-hex::before
+          content: "#{ $brand-danger }"
+
+      &.gray-darker
+        .color-fill
+          background-color: $gray-darker
+        .color-hex::before
+          content: "#{ $gray-darker }"
+
+      &.gray-dark
+        .color-fill
+          background-color: $gray-dark
+        .color-hex::before
+          content: "#{ $gray-dark }"
+
+      &.gray
+        .color-fill
+          background-color: $gray
+        .color-hex::before
+          content: "#{ $gray }"
+
+      &.gray-light
+        .color-fill
+          background-color: $gray-light
+        .color-hex::before
+          content: "#{ $gray-light }"
+
+      &.gray-lighter
+        .color-fill
+          background-color: $gray-lighter
+        .color-hex::before
+          content: "#{ $gray-lighter }"
+
+section.buttons
+  .buttons-container
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    .btn
+      margin: 5px 10px

@@ -18,10 +18,10 @@ var errorHandler = function (error) {
 gulp.task('default', ['styles']);
 
 gulp.task('styles', function() {
-  return gulp.src('./src/sass/**/**.sass')
+  return gulp.src('./src/sass/application.sass')
     .pipe(plumber({ errorHandler: errorHandler }))
     .pipe(sass({ indentedSyntax: true }).on('error', util.log))
-    .pipe(concat('application.css'))
+    .pipe(concat('tokenly.css'))
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.reload({ stream:true }))
 });
