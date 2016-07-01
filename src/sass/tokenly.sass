@@ -13,11 +13,11 @@ $brand-success:             #2eCC71
 $brand-warning:             #FFC107
 $brand-danger:              #FB6B5D
 
-$mobile: 400px
-$phablet: 550px
-$tablet: 750px
-$desktop: 1000px
-$desktophd: 1200px
+$mobile-px: 400px
+$phablet-px: 550px
+$tablet-px: 750px
+$desktop-px: 1000px
+$desktophd-px: 1200px
 
 /* Typography
 /* ----------------------------------------------- */
@@ -83,7 +83,9 @@ hr
   position: relative
   width: 100%
   margin: 0 auto
-  padding: 0 20px
+  &.with-padding
+    padding-left: 20px
+    padding-right: 20px
 .container
   position: relative
   width: 100%
@@ -245,6 +247,8 @@ pre > code
   float: right
 .u-pull-left
   float: left
+.overflow-hidden
+  overflow: hidden
 
 
 /* Misc
@@ -397,18 +401,32 @@ table
 // on small devices, paste the mobile query code up in the buttons section and style it
 // there.
 
+// Use the mixins inline with your other styles.
+// 
+// Example:
+// .picture
+//   width: 100%
+//   +tablet
+//     width: 50%
+//   +desktop
+//     width: 25%
 
-/* Larger than mobile */
-// @media (min-width: 400px) {}
+@mixin mobile
+  @media (min-width: #{$mobile-px})
+    @content
 
-/* Larger than phablet (also point when grid becomes active) */
-// @media (min-width: 550px) {}
+@mixin phablet
+  @media (min-width: #{$phablet-px})
+    @content
 
-/* Larger than tablet */
-// @media (min-width: 750px) {}
+@mixin tablet
+  @media (min-width: #{$tablet-px})
+    @content
 
-/* Larger than desktop */
-// @media (min-width: 1000px) {}
+@mixin desktop
+  @media (min-width: #{$desktop-px})
+    @content
 
-/* Larger than Desktop HD */
-// @media (min-width: 1200px) {}
+@mixin desktophd
+  @media (min-width: #{$desktophd-px})
+    @content

@@ -1,8 +1,7 @@
-@charset "UTF-8";
 /* Control */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 /* Typography */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 body {
   font-size: 18px; }
 
@@ -64,12 +63,14 @@ hr {
   margin-bottom: 50px; }
 
 /* Grid */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 .fluid-container {
   position: relative;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 20px; }
+  margin: 0 auto; }
+  .fluid-container.with-padding {
+    padding-left: 20px;
+    padding-right: 20px; }
 
 .container {
   position: relative;
@@ -176,7 +177,7 @@ hr {
     margin-left: 52%; } }
 
 /* Links */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 a {
   color: #4497FA; }
 
@@ -184,7 +185,7 @@ a:hover {
   color: #76b3fb; }
 
 /* Lists */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 ul {
   list-style: circle inside; }
 
@@ -206,7 +207,7 @@ li {
   margin-bottom: 1rem; }
 
 /* Code */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -222,7 +223,7 @@ pre > code {
   white-space: pre; }
 
 /* Utilities */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 .u-full-width {
   width: 100%; }
 
@@ -236,8 +237,11 @@ pre > code {
 .u-pull-left {
   float: left; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
 /* Misc */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -245,7 +249,7 @@ hr {
   border-top: 1px solid #E1E1E1; }
 
 /* Clearing */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
@@ -255,7 +259,7 @@ hr {
   clear: both; }
 
 /* Buttons */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 .btn.fill.default {
   outline: none;
   border: none;
@@ -467,7 +471,7 @@ hr {
     color: #4cd787; }
 
 /* Forms and Input Fields */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 .input-group {
   margin-bottom: 15px; }
 
@@ -532,7 +536,7 @@ select {
   margin-top: 5px; }
 
 /* Tables */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------------------------------- */
 table {
   width: 100%; }
   table th {
@@ -548,24 +552,15 @@ table {
     padding-right: 0; }
 
 /* Media Queries */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Larger than mobile */
-/* Larger than phablet (also point when grid becomes active) */
-/* Larger than tablet */
-/* Larger than desktop */
-/* Larger than Desktop HD */
-.everything {
-  padding: 0 10px;
-  max-width: 960px;
-  margin: 0 auto;
-  overflow: hidden; }
-
+/* ----------------------------------------------- */
 section {
   margin-bottom: 60px; }
   section:first-of-type {
     margin-top: 60px; }
   section > *:last-child {
     margin-bottom: 0; }
+  section .section-heading {
+    margin-bottom: 30px; }
 
 section.typography .bit-label {
   font-weight: bold;
@@ -577,7 +572,7 @@ section.typography .font-stack:after {
 section.typography .font-weight {
   margin-top: 0;
   font-size: 24px;
-  margin-bottom: 15px; }
+  margin-bottom: 40px; }
 
 section.typography .font-weight-light {
   font-weight: lighter; }
