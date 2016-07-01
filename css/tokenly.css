@@ -53,7 +53,8 @@ h6 {
   font-size: .75em; }
 
 p {
-  line-height: 1.6; }
+  line-height: 1.6;
+  margin-top: 0; }
 
 hr {
   background-color: transparent;
